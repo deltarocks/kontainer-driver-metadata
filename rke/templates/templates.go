@@ -11,6 +11,7 @@ const (
 	Canal         = "canal"
 	Flannel       = "flannel"
 	Weave         = "weave"
+	KubeRouter    = "kube-router"
 	CoreDNS       = "coreDNS"
 	KubeDNS       = "kubeDNS"
 	MetricsServer = "metricsServer"
@@ -32,6 +33,8 @@ const (
 	flannelv18  = "flannel-v1.8"
 	flannelv115 = "flannel-v1.15"
 	flannelv116 = "flannel-v1.16"
+
+	kubeRouterv116 = "kube-router-v1.16"
 
 	coreDnsv18  = "coredns-v1.8"
 	coreDnsv116 = "coredns-v1.16"
@@ -94,6 +97,9 @@ func LoadK8sVersionedTemplates() map[string]map[string]string {
 			">=1.15.0-rancher0 <=1.15.3-rancher1-1": nginxIngressv18,
 			">=1.15.3-rancher2":                     nginxIngressV115,
 		},
+		KubeRouter: {
+			">=1.16.0-alpha": kubeRouterv116,
+		},
 		TemplateKeys: getTemplates(),
 	}
 }
@@ -127,6 +133,8 @@ func getTemplates() map[string]string {
 
 		weavev18:  WeaveTemplate,
 		weavev116: WeaveTemplateV116,
+
+		kubeRouterv116: KubeRouterTemplateV116,
 
 		nginxIngressv18:  NginxIngressTemplate,
 		nginxIngressV115: NginxIngressTemplateV0251Rancher1,
