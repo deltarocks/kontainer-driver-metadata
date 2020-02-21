@@ -90,10 +90,10 @@ func LoadK8sVersionedTemplates() map[string]map[string]string {
 			">=1.15.0-rancher0 <=1.15.3-rancher1-1": nginxIngressv18,
 			">=1.15.3-rancher2":                     nginxIngressV115,
 		},
-		KubeRouter: {
+		kdm.KubeRouter: {
 			">=1.16.0-alpha": kubeRouterv116,
 		},
-		TemplateKeys: getTemplates(),
+		kdm.TemplateKeys: getTemplates(),
 	}
 }
 
