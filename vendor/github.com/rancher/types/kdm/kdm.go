@@ -16,6 +16,7 @@ const (
 	MetricsServer = "metricsServer"
 	NginxIngress  = "nginxIngress"
 	TemplateKeys  = "templateKeys"
+	KubeRouter    = "kube-router"
 )
 
 type Data struct {

@@ -13,3 +13,5 @@ require (
 	github.com/rancher/types v0.0.0-20200213193746-f3c2d9d0e471
 	github.com/sirupsen/logrus v1.4.2
 )
+
+replace github.com/rancher/types => github.com/deltarocks/rke-types v0.0.0-20200221101647-43f12f8a3674
