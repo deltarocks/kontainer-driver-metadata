@@ -10,8 +10,9 @@ replace (
 
 require (
 	github.com/blang/semver v3.5.1+incompatible
-	github.com/rancher/types v0.0.0-20200213193746-f3c2d9d0e471
+	github.com/rancher/types v0.0.0-20200225170923-7f43506cf432
 	github.com/sirupsen/logrus v1.4.2
+	sigs.k8s.io/yaml v1.1.0
 )
 
 replace github.com/rancher/types => github.com/deltarocks/rke-types v0.0.0-20200221101647-43f12f8a3674
